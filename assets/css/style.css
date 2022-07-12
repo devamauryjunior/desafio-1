@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
+/* GERAL */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --gradient: linear-gradient(88.27deg, #574AE8 0%, #3EA1DB 100%);
+    --purple: #574AE8;
+    --gray: #717171;
+    --gray-dark: #1A202C;
+    --white: #FFFFFF;
+    --white-front: #F3F5F7;
+    --input-background: rgba(255, 255, 255, 0.2);
+}
+
+body {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+#inicial,
+#front {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+/* Cabeçalho */
+#header {
+    padding: 4.1rem 27rem;
+}
+#inicial {
+    padding: 4.1rem 27rem;
+    background: var(--gradient);
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--white);
+}
+
+.text h2,
+.text h3 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    font-weight: 400;
+}
+
+.btn-input {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: calc(7.3rem - 3rem);
+    padding: 2.1rem 0 2.1rem 2.1rem;
+    background: var(--input-background);
+}
+
+.btn-input button {
+    background: none;
+    border: none;
+}
+
+.btn-input button:hover {
+    cursor: pointer;
+}
+
+.btn-input input {
+    margin-left: 2.1rem;
+    font-size: 1.8rem;
+    font-family: 'Inter', sans-serif;
+    width: 100vw;
+    background: none;
+    border: none;
+}
+
+.btn-input input::placeholder {
+    color: var(--input-background);
+    font-weight: 500;
+    line-height: 2.2rem;
+    border: none;
+    padding: 2.1rem 0 2.2rem 0;
+}
+
+.btn-input input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+/* MEIO */
+#front {
+    padding: 16rem 27rem 10rem 27rem;
+    gap: 5rem;
+    background: var(--white-front);
+    font-family: 'Lexend Deca', sans-serif;
+      
+}
+
+.row-1,
+.row-2,
+.row-3,
+.row-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.2rem;
+    border-radius: .5rem;
+    background: var(--white-front);
+    box-shadow: 0px 0px 1rem rgba(19, 19, 31, 0.05);
+    padding: 2.5rem 2.9rem;
+}
+
+.date-icon,
+.title-text {
+    width: 100%;
+}
+
+.date-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--gray);
+}
+
+.title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-weight: 400;
+}
+
+.title-text h1 {
+    font-weight: 400;
+    font-size: 2.6rem;
+    color: var(--gray-dark);
+    margin-bottom: .7rem;
+}
+
+.title-text p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-align: left;
+    line-height: 3.2rem;
+}
+/* @media screen and (min-width:640px) */
+@media (max-width: 900px) {
+    #inicial {
+        padding: 4.8rem 2rem;
+    }
+
+    .text h2,
+    .text h3 {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+
+    .btn-input {
+        margin-top: calc(4.1rem - 2.2rem);
+        padding: 1.2rem 0 1.2rem 1rem;
+        background: var(--input-background);
+    }
+
+    .btn-input input {
+        font-size: 1.4rem;
+    }
+
+    .btn-input input::placeholder {
+        line-height: 1.7rem;
+        padding: 1.2rem 0 1.1rem 0;
+    }
+
+    #front {
+        padding: 5rem 2rem;
+        gap: 2.5rem; 
+    }
+
+    .row-1,
+    .row-2,
+    .row-3,
+    .row-4 {
+        gap: 2.7rem;
+        padding: 1.6rem 1.2rem 1.5rem 1.7rem;
+    }
+
+    .title-text h1 {
+        font-size: 1.8rem;
+        margin-bottom: .9rem;
+        font-weight: 600;
+    }
+
+    .title-text p {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+    }
+}
